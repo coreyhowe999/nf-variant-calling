@@ -1,0 +1,34 @@
+# Nextflow
+work/
+.nextflow*
+results/
+*.log
+.nextflow.log*
+.nextflow/
+
+# Cache + tmp
+.cache/
+tmp/
+
+# Editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Python (for any helper scripts)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Build artifacts / large files
+*.bam
+*.bai
+*.cram
+*.crai
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+!assets/*.vcf
