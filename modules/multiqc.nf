@@ -21,6 +21,6 @@ process MULTIQC {
 
     script:
     """
-    multiqc --force --filename multiqc_report.html .
+    multiqc --force .
     """
 }
