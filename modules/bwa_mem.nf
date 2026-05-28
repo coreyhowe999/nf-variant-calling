@@ -12,7 +12,7 @@ process BWA_MEM {
     publishDir "${params.outdir}/bwa", mode: params.publish_mode, pattern: '*.sorted.bam'
 
     conda      'bioconda::bwa-mem2=2.2.1 bioconda::samtools=1.19.2'
-    container  'quay.io/biocontainers/mulled-v2-fe8faa35dbf6dc65a0f7f5d4ea12e31a79f73e40:8df0caa3df2c8b81e9d9d50ba5ea65e30c34cc6f-0'
+    container  'community.wave.seqera.io/library/bwa-mem2_htslib_samtools:db98f81f55b64113'
 
     input:
     tuple val(meta), path(reads)
